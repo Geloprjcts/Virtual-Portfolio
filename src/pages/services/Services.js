@@ -11,12 +11,12 @@ function Services() {
                             <CardMedia
                                 component="img"
                                 height="140"
-                                image={IMAGE.Sample2}
+                                image={IMAGE.WebDesign}
                                 alt="green iguana"
                             />
-                            <CardContent>
+                            <CardContent sx={{backgroundColor:'lightblue'}}>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Lizard
+                                    Web Development
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -32,12 +32,12 @@ function Services() {
                             <CardMedia
                                 component="img"
                                 height="140"
-                                image={IMAGE.Sample2}
+                                image={IMAGE.ComputerFormat}
                                 alt="green iguana"
                             />
-                            <CardContent>
+                            <CardContent sx={{backgroundColor:'lightblue'}}>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Lizard
+                                    Computer Formatting
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -53,12 +53,12 @@ function Services() {
                             <CardMedia
                                 component="img"
                                 height="140"
-                                image={IMAGE.Sample2}
+                                image={IMAGE.GraphicDesign}
                                 alt="green iguana"
                             />
-                            <CardContent>
+                            <CardContent sx={{backgroundColor:'lightblue'}}>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Lizard
+                                    Graphic Design
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -74,12 +74,12 @@ function Services() {
                             <CardMedia
                                 component="img"
                                 height="140"
-                                image={IMAGE.Sample2}
+                                image={IMAGE.PhotoEdit}
                                 alt="green iguana"
                             />
-                            <CardContent>
+                            <CardContent sx={{backgroundColor:'lightblue'}}>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Lizard
+                                    Photo Editing
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -95,12 +95,12 @@ function Services() {
                             <CardMedia
                                 component="img"
                                 height="140"
-                                image={IMAGE.Sample2}
+                                image={IMAGE.UiDesign}
                                 alt="green iguana"
                             />
-                            <CardContent>
+                            <CardContent sx={{backgroundColor:'lightblue'}}>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Lizard
+                                    UI Design
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -116,12 +116,12 @@ function Services() {
                             <CardMedia
                                 component="img"
                                 height="140"
-                                image={IMAGE.Sample2}
+                                image={IMAGE.VideoEdit}
                                 alt="green iguana"
                             />
-                            <CardContent>
+                            <CardContent sx={{backgroundColor:'lightblue'}}>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Lizard
+                                    Video Editing
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     Lizards are a widespread group of squamate reptiles, with over 6,000
