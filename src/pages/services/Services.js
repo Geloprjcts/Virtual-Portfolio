@@ -1,11 +1,24 @@
 import { Grid, Box, Card, CardContent, CardMedia, Typography, CardActionArea } from "@mui/material";
+import { motion } from "framer-motion"
 import IMAGE from "../../assets/images";
+import { useEffect } from "react";
 function Services() {
+
     return (
-        <Box sx={{ height: 'auto', }}>
+        <Box sx = {{ height: 'auto', }}>
             <Typography variant="h2" sx={{ marginTop: 12, textAlign: 'center' }}>Services</Typography>
             <Grid container rowSpacing={{ xs: 2, sm: 2, md: 2, xl: 4 }} columnSpacing={{ xs: 4, sm: 4, md: 4, xl: 6 }} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: 4 }}>
-                <Grid item >
+                <Grid item component={motion.div}
+                    initial={{ x: -99 }}
+                    whileHover={{ scale: 1.1 }}
+                    whileInView={{
+                        x: 0,
+                        transition: {
+                            type: "spring",
+                            bounce: 0.4,
+                            duration: 6
+                        }
+                    }}>
                     <Card raised sx={{ maxWidth: 445, borderTopRightRadius: 100 }}>
                         <CardActionArea>
                             <CardMedia
@@ -14,7 +27,7 @@ function Services() {
                                 image={IMAGE.WebDesign}
                                 alt="green iguana"
                             />
-                            <CardContent sx={{backgroundColor:'lightblue'}}>
+                            <CardContent sx={{ backgroundColor: 'lightblue' }}>
                                 <Typography gutterBottom variant="h5" component="div">
                                     Web Development
                                 </Typography>
@@ -26,7 +39,17 @@ function Services() {
                         </CardActionArea>
                     </Card>
                 </Grid>
-                <Grid item >
+                <Grid item component={motion.div}
+                    initial={{ x: -99 }}
+                    whileHover={{ scale: 1.1 }}
+                    whileInView={{
+                        x: 0,
+                        transition: {
+                            type: "spring",
+                            bounce: 0.4,
+                            duration: 6
+                        }
+                    }}>
                     <Card raised sx={{ maxWidth: 445, borderTopRightRadius: 100 }}>
                         <CardActionArea>
                             <CardMedia
@@ -35,7 +58,7 @@ function Services() {
                                 image={IMAGE.ComputerFormat}
                                 alt="green iguana"
                             />
-                            <CardContent sx={{backgroundColor:'lightblue'}}>
+                            <CardContent sx={{ backgroundColor: 'lightblue' }}>
                                 <Typography gutterBottom variant="h5" component="div">
                                     Computer Formatting
                                 </Typography>
@@ -47,7 +70,17 @@ function Services() {
                         </CardActionArea>
                     </Card>
                 </Grid>
-                <Grid item >
+                <Grid item component={motion.div}
+                    initial={{ x: -99 }}
+                    whileHover={{ scale: 1.1 }}
+                    whileInView={{
+                        x: 0,
+                        transition: {
+                            type: "spring",
+                            bounce: 0.4,
+                            duration: 6
+                        }
+                    }}>
                     <Card raised sx={{ maxWidth: 445, borderTopRightRadius: 100 }}>
                         <CardActionArea>
                             <CardMedia
@@ -56,7 +89,7 @@ function Services() {
                                 image={IMAGE.GraphicDesign}
                                 alt="green iguana"
                             />
-                            <CardContent sx={{backgroundColor:'lightblue'}}>
+                            <CardContent sx={{ backgroundColor: 'lightblue' }}>
                                 <Typography gutterBottom variant="h5" component="div">
                                     Graphic Design
                                 </Typography>
@@ -68,7 +101,17 @@ function Services() {
                         </CardActionArea>
                     </Card>
                 </Grid>
-                <Grid item>
+                <Grid item component={motion.div}
+                    initial={{ x: 99 }}
+                    whileHover={{ scale: 1.1 }}
+                    whileInView={{
+                        x: 0,
+                        transition: {
+                            type: "spring",
+                            bounce: 0.4,
+                            duration: 6
+                        }
+                    }}>
                     <Card raised sx={{ maxWidth: 445, borderTopLeftRadius: 100 }}>
                         <CardActionArea>
                             <CardMedia
@@ -77,7 +120,7 @@ function Services() {
                                 image={IMAGE.PhotoEdit}
                                 alt="green iguana"
                             />
-                            <CardContent sx={{backgroundColor:'lightblue'}}>
+                            <CardContent sx={{ backgroundColor: 'lightblue' }}>
                                 <Typography gutterBottom variant="h5" component="div">
                                     Photo Editing
                                 </Typography>
@@ -89,7 +132,17 @@ function Services() {
                         </CardActionArea>
                     </Card>
                 </Grid>
-                <Grid item>
+                <Grid item component={motion.div}
+                    initial={{ x: 99 }}
+                    whileHover={{ scale: 1.1 }}
+                    whileInView={{
+                        x: 0,
+                        transition: {
+                            type: "spring",
+                            bounce: 0.4,
+                            duration: 6
+                        }
+                    }}>
                     <Card raised sx={{ maxWidth: 445, borderTopLeftRadius: 100 }}>
                         <CardActionArea>
                             <CardMedia
@@ -98,7 +151,7 @@ function Services() {
                                 image={IMAGE.UiDesign}
                                 alt="green iguana"
                             />
-                            <CardContent sx={{backgroundColor:'lightblue'}}>
+                            <CardContent sx={{ backgroundColor: 'lightblue' }}>
                                 <Typography gutterBottom variant="h5" component="div">
                                     UI Design
                                 </Typography>
@@ -110,7 +163,17 @@ function Services() {
                         </CardActionArea>
                     </Card>
                 </Grid>
-                <Grid item>
+                <Grid item component={motion.div}
+                    initial={{ x: 99 }}
+                    whileHover={{ scale: 1.1 }}
+                    whileInView={{
+                        x: 0,
+                        transition: {
+                            type: "spring",
+                            bounce: 0.4,
+                            duration: 6
+                        }
+                    }}>
                     <Card raised sx={{ maxWidth: 445, borderTopLeftRadius: 100 }}>
                         <CardActionArea>
                             <CardMedia
@@ -119,7 +182,7 @@ function Services() {
                                 image={IMAGE.VideoEdit}
                                 alt="green iguana"
                             />
-                            <CardContent sx={{backgroundColor:'lightblue'}}>
+                            <CardContent sx={{ backgroundColor: 'lightblue' }}>
                                 <Typography gutterBottom variant="h5" component="div">
                                     Video Editing
                                 </Typography>
@@ -132,7 +195,7 @@ function Services() {
                     </Card>
                 </Grid>
             </Grid>
-        </Box>
+        </Box >
     );
 }
 
